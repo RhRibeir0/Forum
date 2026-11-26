@@ -54,22 +54,4 @@ O banco de dados `academico.db` e a tabela `alunos` são criados automaticamente
 | PUT | `/api/alunos/:id` | Atualiza um aluno |
 | DELETE | `/api/alunos/:id` | Exclui um aluno |
 
-## Publicar no GitHub
-
-1. Crie uma conta no GitHub, caso ainda não tenha.
-2. Crie um repositório público com o nome `sistema-academico-crud`.
-3. Abra o terminal na pasta do projeto e execute:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Projeto CRUD de alunos"
-   git branch -M main
-   git remote add origin https://github.com/SEU-USUARIO/sistema-academico-crud.git
-   git push -u origin main
-   ```
-
-4. Troque `SEU-USUARIO` pelo seu nome de usuário do GitHub.
-5. Copie o endereço do repositório e envie no fórum.
-
 > Este projeto é demonstrativo e utiliza dados fictícios. Não cadastre informações pessoais reais.
