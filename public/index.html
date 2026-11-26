@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Acadêmico | Cadastro de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div>
+      <p class="marca">SISTEMA ACADÊMICO</p>
+      <h1>Cadastro de alunos</h1>
+      <p class="subtitulo">Gerenciamento de informações acadêmicas</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="painel">
+      <h2 id="titulo-formulario">Adicionar aluno</h2>
+      <p class="descricao">Preencha os cinco campos para registrar um aluno.</p>
+
+      <form id="form-aluno">
+        <input type="hidden" id="aluno-id">
+
+        <div class="campos">
+          <label>
+            Nome completo
+            <input type="text" id="nome" placeholder="Ex.: Ana Souza" required>
+          </label>
+
+          <label>
+            Matrícula
+            <input type="text" id="matricula" placeholder="Ex.: 202600123" required>
+          </label>
+
+          <label>
+            Curso
+            <input type="text" id="curso" placeholder="Ex.: Análise e Desenvolvimento de Sistemas" required>
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" id="email" placeholder="aluno@email.com" required>
+          </label>
+
+          <label>
+            Telefone
+            <input type="tel" id="telefone" placeholder="(34) 99999-9999" required>
+          </label>
+        </div>
+
+        <div class="acoes-formulario">
+          <button type="submit" class="botao primario" id="botao-salvar">Cadastrar aluno</button>
+          <button type="button" class="botao secundario escondido" id="botao-cancelar">Cancelar edição</button>
+        </div>
+        <p id="mensagem" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="painel">
+      <div class="cabecalho-lista">
+        <div>
+          <h2>Alunos cadastrados</h2>
+          <p class="descricao">Consulte, edite ou exclua os registros.</p>
+        </div>
+        <span class="contador" id="contador">0 alunos</span>
+      </div>
+
+      <div class="tabela-responsiva">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Matrícula</th>
+              <th>Curso</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="lista-alunos">
+            <tr><td colspan="6" class="vazio">Carregando registros...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>Projeto acadêmico demonstrativo — Programação Back-End</footer>
+  <script src="app.js"></script>
+</body>
+</html>

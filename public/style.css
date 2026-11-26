@@ -1,0 +1,81 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202938;
+  background: #f3f5f8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.topo {
+  background: #173b68;
+  color: white;
+  padding: 34px 7%;
+}
+.marca {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #c9dcf5;
+}
+h1 { margin: 0; font-size: 30px; }
+.subtitulo { margin: 8px 0 0; color: #e0eafa; }
+.container { width: min(1180px, 92%); margin: 28px auto; }
+.painel {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 18px rgba(20, 40, 70, .06);
+}
+h2 { margin: 0 0 7px; font-size: 21px; }
+.descricao { color: #687386; margin: 0 0 20px; font-size: 14px; }
+.campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+label { display: flex; flex-direction: column; gap: 7px; font-size: 14px; font-weight: bold; }
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccd3dd;
+  border-radius: 7px;
+  font-size: 14px;
+}
+input:focus { outline: 2px solid #b6d2f5; border-color: #2866a5; }
+.acoes-formulario { display: flex; gap: 10px; margin-top: 20px; }
+.botao {
+  border: 0;
+  border-radius: 7px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.primario { background: #205b96; color: white; }
+.secundario { background: #e8edf3; color: #26364a; }
+.botao:hover { filter: brightness(.95); }
+.escondido { display: none; }
+#mensagem { min-height: 18px; margin: 12px 0 0; font-size: 14px; }
+.sucesso { color: #167344; }
+.erro { color: #b42318; }
+.cabecalho-lista { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.contador { background: #eaf1f9; color: #205b96; padding: 7px 11px; border-radius: 20px; font-size: 13px; }
+.tabela-responsiva { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 13px 10px; text-align: left; border-bottom: 1px solid #e8ebef; }
+th { color: #596579; background: #f8fafc; }
+.acoes { display: flex; gap: 7px; }
+.acao {
+  border: 0; border-radius: 5px; padding: 7px 9px;
+  cursor: pointer; font-size: 12px; font-weight: bold;
+}
+.editar { background: #e7f0fb; color: #205b96; }
+.excluir { background: #fdebea; color: #a52a25; }
+.vazio { text-align: center; color: #788397; padding: 25px; }
+footer { text-align: center; padding: 18px; color: #7b8492; font-size: 12px; }
+@media (max-width: 650px) {
+  .campos { grid-template-columns: 1fr; }
+  .topo { padding: 28px 5%; }
+  h1 { font-size: 25px; }
+  .painel { padding: 18px; }
+}
